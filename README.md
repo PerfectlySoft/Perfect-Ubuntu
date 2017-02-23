@@ -1,4 +1,4 @@
-# Install Swift 2016-08-18 into an Ubuntu 15.10 System
+# Install Swift 3.0.2 into an Ubuntu 16.04 System
 
 <p align="center">
     <a href="http://perfect.org/get-involved.html" target="_blank">
@@ -39,9 +39,9 @@
     </a>
 </p>
 
-This project includes a script which will install Swift directly into your Ubuntu system.  The account using the script will require administrative privileges.  You can invoke the script by using the following command:
+This project includes a script which will install Swift and all major dependencies for Perfect directly into your Ubuntu system.  The account using the script will require administrative privileges.  You can invoke the script by using the following command:
 
 ```
-./install_swift.sh
+sudo ./install_all.sh
 ```
 
