@@ -39,9 +39,33 @@
     </a>
 </p>
 
-This project includes a script which will install Swift and all major dependencies for Perfect directly into your Ubuntu system.  The account using the script will require administrative privileges.  You can invoke the script by using the following command:
+This project includes a script which will install Swift and all major dependencies for Perfect directly into your Ubuntu system.  The account using the script will require administrative privileges.  You can invoke the script by using the following commands:
 
 ```
-sudo ./install.sh
+git clone https://github.com/PerfectlySoft/Perfect-Ubuntu.git
+cd Perfect-Ubuntu/
+chmod +x ./install.sh
+sudo ./install.sh --sure
 ```
 
+Once this has been completed, you can now build. For example:
+
+```
+# Optional: execute if you are still in the Perfect-Ubuntu directory!
+cd ../ 
+
+# clone a project
+git clone https://github.com/PerfectExamples/Perfect-Session-PostgreSQL-Demo.git
+
+# enter the directory
+cd Perfect-Session-PostgreSQL-Demo/
+
+# build the project
+swift build -c release
+```
+
+Once the project has successfully built, you will see the last line is:
+
+```
+Linking ./.build/release/Perfect-Session-PostgreSQL-Demo
+```
