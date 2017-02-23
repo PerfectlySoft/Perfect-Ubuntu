@@ -2,7 +2,7 @@
 # Copyright (C) 2016 PerfectlySoft Inc.
 # Author: Shao Miller <swiftcode@synthetel.com>
 
-WEBLOC=https://swift.org/builds/swift-3.0.1-release/ubuntu1510/swift-3.0.1-RELEASE/swift-3.0.1-RELEASE-ubuntu15.10.tar.gz
+WEBLOC=https://swift.org/builds/swift-3.0.2-release/ubuntu1604/swift-3.0.2-RELEASE/swift-3.0.2-RELEASE-ubuntu16.04.tar.gz
 SWIFTNAME=$(basename $WEBLOC)
 MYDIR=$(dirname $0)
 MYNAME=$(basename $0)
