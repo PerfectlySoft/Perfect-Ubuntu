@@ -21,13 +21,13 @@ if [ "$1" != "--self-invoked" ]; then
     exec $MYDIR/$MYNAME --self-invoked
   fi
 
-sudo apt-get -y update
+apt-get -y update
 
-sudo apt-get install -y clang pkg-config libicu-dev libpython2.7 libxml2-dev wget git libssl-dev uuid-dev libsqlite3-dev libpq-dev libmysqlclient-dev libbson-dev libmongoc-dev libcurl4-openssl-dev 
+apt-get install -y clang pkg-config libicu-dev libpython2.7 libxml2-dev wget git libssl-dev uuid-dev libsqlite3-dev libpq-dev libmysqlclient-dev libbson-dev libmongoc-dev libcurl4-openssl-dev 
 
-sudo sed -i -e 's/-fabi-version=2 -fno-omit-frame-pointer//g' /usr/lib/x86_64-linux-gnu/pkgconfig/mysqlclient.pc
+sed -i -e 's/-fabi-version=2 -fno-omit-frame-pointer//g' /usr/lib/x86_64-linux-gnu/pkgconfig/mysqlclient.pc
 
-sudo ln -s /usr/include/libmongoc-1.0 /usr/local/include/libmongoc-1.0
+ln -s /usr/include/libmongoc-1.0 /usr/local/include/libmongoc-1.0
 
 echo Downloading $WEBLOC ...
 wget $WEBLOC
@@ -38,6 +38,6 @@ gunzip < $SWIFTNAME | tar -C / -xv --strip-components 1
 echo Cleaning up download...
 rm $SWIFTNAME
 
-sudo chmod -R 755 /usr/lib/swift/
+chmod -R 755 /usr/lib/swift/
 
 echo All done.
