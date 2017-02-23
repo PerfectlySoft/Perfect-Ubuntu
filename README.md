@@ -48,6 +48,8 @@ chmod +x ./install.sh
 sudo ./install.sh --sure
 ```
 
+Note that this also includes the client libraries for `sqlite3`, `postgres`, `mysql`, `mongodb` - not the servers.
+
 Once this has been completed, you can now build. For example:
 
 ```
