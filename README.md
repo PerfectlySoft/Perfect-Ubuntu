@@ -42,6 +42,6 @@
 This project includes a script which will install Swift and all major dependencies for Perfect directly into your Ubuntu system.  The account using the script will require administrative privileges.  You can invoke the script by using the following command:
 
 ```
-sudo ./install_all.sh
+sudo ./install.sh
 ```
 
