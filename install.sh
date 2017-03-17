@@ -40,6 +40,8 @@ rm $SWIFTNAME
 
 chmod -R 755 /usr/lib/swift/
 # Add to avoid the dreaded "error while loading shared libraries: libswiftCore.so: cannot open shared object file: No such file or directory"
-echo 'LD_LIBRARY_PATH=/swift-3.0.2-RELEASE-ubuntu16.04/usr/lib/swift/linux:"${LD_LIBRARY_PATH}"' >> /etc/environment
+touch /etc/ld.so.conf.d/swift.conf
+echo "/usr/lib/swift/linux" >> /etc/ld.so.conf.d/swift.conf 
+ldconfig
 
 echo All done.
