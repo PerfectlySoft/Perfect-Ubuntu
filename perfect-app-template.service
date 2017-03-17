@@ -3,8 +3,8 @@ Description=Perfect deployed perfect-app-template
 
 [Service]
 Type=simple
-WorkingDirectory=/perfect-deployed/perfect-app-template
-ExecStart=/perfect-deployed/perfect-app-template/Perfect-App-Template
+WorkingDirectory=/perfect-deployed/Perfect-App-Template
+ExecStart=/perfect-deployed/Perfect-App-Template/Perfect-App-Template
 Restart=always
 PIDFile=/var/run/perfect-app-template.pid
 
