@@ -71,3 +71,22 @@ Once the project has successfully built, you will see the last line is:
 ```
 Linking ./.build/release/Perfect-Session-PostgreSQL-Demo
 ```
+
+Also included in this repository is a sample Service file, `perfect-app-template.service`
+
+To change this to your work for your own executable, change the file to values appropriate to your situation.
+
+```
+[Unit]
+Description=Perfect deployed <executable-reference>
+
+[Service]
+Type=simple
+WorkingDirectory=/perfect-deployed/<directory-name>
+ExecStart=/perfect-deployed/<directory-name>/<executable-name>
+Restart=always
+PIDFile=/var/run/<executable-reference>.pid
+
+[Install]
+WantedBy=multi-user.target
+```
