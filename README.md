@@ -1,4 +1,4 @@
-# Install Swift 3.0.2 into an Ubuntu 16.04 System
+# Install Swift 3.1 into an Ubuntu 16.04 System
 
 <p align="center">
     <a href="http://perfect.org/get-involved.html" target="_blank">
