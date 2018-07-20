@@ -1,7 +1,7 @@
 #!/bin/bash
 # Copyright (C) 2017 PerfectlySoft Inc.
 # Author: Jonathan Guthrie <jono@perfect.com>
-SWIFT_VERSION=4.1.1
+SWIFT_VERSION=4.1.2
 WEBLOC=https://swift.org/builds/swift-$SWIFT_VERSION-release/ubuntu1604/swift-$SWIFT_VERSION-RELEASE/swift-$SWIFT_VERSION-RELEASE-ubuntu16.04.tar.gz
 SWIFTNAME=$(basename $WEBLOC)
 MYDIR=$(dirname $0)
